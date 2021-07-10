@@ -19,6 +19,8 @@ main {
     display: grid;
     grid-template-columns: var(--card-photo) 250px;
     grid-template-rows: var(--card-photo) 80px;
+
+    margin: 20px;
 }
 
 .card__profile--photo {
