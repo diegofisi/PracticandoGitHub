@@ -1,0 +1,59 @@
+:root {
+    --card-photo: 150px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.card__container {
+    display: grid;
+    grid-template-columns: var(--card-photo) 250px;
+    grid-template-rows: var(--card-photo) 80px;
+
+    margin: 20px;
+}
+
+.card__profile--photo {
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card__profile--photo img {
+    width: calc(var(--card-photo) - 10px);
+    height: calc(var(--card-photo) - 10px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card__profile--data {
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+    padding: 10px;
+    background-color: aqua;
+}
+
+.card__profile--contact {
+    grid-column: 1;
+    grid-row: 2;
+
+    padding: 10px;
+    font-size: 0.8rem;
+    background-color: yellow;
+}
