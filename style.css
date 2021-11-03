@@ -57,3 +57,12 @@ main {
     font-size: 0.8rem;
     background-color: yellow;
 }
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aqua;
+}
